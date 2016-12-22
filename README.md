@@ -1,21 +1,7 @@
 **Overview**
 =============
-- Create a referendum
-- Register and enroll the participant 
-- Enter each participant's vote on the Blockchain
-- Count the votes in the Blockchain
-- Present the results of the referendum 
+The blockchain is the new disruptive method of recording transactions. Thanks to Bitcoin, many companies and industries are looking into implementing the blockchain into their businesses to be more efficient and provide better services. 
 
-**Milestones**
-- [X] Register and enroll voters
-- [X] Register and enroll hardcoded voters
-- [X] Prettify the demo 
-- [X] Serve election results back to voters  
-- [ ] Upload the application to Bluemix 
+With the secure capabilities of the blockchain we can provide an honest and secure elections. My capstone project for my final year aims to use the blockchain just for this purpose.
 
-**Resource**
- - Read this to see the methods in HFC: github.com/hyperledger/fabric/sdk/node/lib/hfc.js
-
-**Notes**
-- For now, the app will work locally and connect to an IBM Blockchain Service on Bluemix
-- Copy your spefic service credentials to ServiceCredentials.json  
+This demo provides the barebones approach of voting using the blockchain. I'll post a link to the final product when that is done.

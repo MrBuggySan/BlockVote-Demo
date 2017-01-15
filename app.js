@@ -337,14 +337,19 @@ app.post('/vote', function(req, res) {
     console.log("enrollmentID: " + req.body.enrollmentID + " vote: " + req.body.vote + " invokes.");
     //Call the invoke 
     var id = req.body.enrollmentID.replace(/ +/g, "");
-    invokeChainCode(id, req.body.vote, res);
+    console.log(req);
+    console.log("vote route id: " + id + ", vote: " + req.body.vote );
+    res.end(JSON.stringify(["Success", "Success"]));
+    //invokeChainCode(id, req.body.vote, res);
 });
 
 app.post('/query', function(req, res) {
-    console.log("enrollmentID: " + req.body.enrollmentID + " query.");
+    console.log("enrollmentID: " + req.body.enrollmentID + ", query.");
     //Call the query 
     var id = req.body.enrollmentID.replace(/ +/g, "");
-    queryChainCode(id, res);
+    console.log("query route id: "+ id);
+    res.end();
+    // queryChainCode(id, res);
 });
 
 //This is only for Brexit referendum 

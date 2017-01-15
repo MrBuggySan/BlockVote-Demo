@@ -42,7 +42,7 @@ var brexitElectionHandler = function() {
         type: 'POST',
         url: URLvote,
         data: submitData,
-        dataType: 'text'
+        dataType: 'json'
     }).done(function(data) {
         $('.optionCanvas').empty();
         var response = "<p>" + data + "</p>";
